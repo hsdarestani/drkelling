@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#211b1f">
+<meta name="description" content="Dr. med. Katharina Kelling. Frauenärztin und Ärztin für ästhetische Medizin. Links, Kontakt und Informationen.">
+<title>Dr. med. Katharina Kelling</title>
+<style>
+:root{
+  --ink:#211b1f;
+  --rose:#a56e7a;
+  --blush:#e9d6da;
+  --sand:#eee5df;
+  --cream:#fbf8f6;
+  --plum:#5f4351;
+  --white:#fff;
+  --shadow:0 22px 58px rgba(55,39,47,.15);
+  --soft:0 12px 30px rgba(55,39,47,.10)
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  min-height:100vh;
+  font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink);
+  background:
+    radial-gradient(circle at 13% 3%,rgba(233,214,218,.62),transparent 28%),
+    radial-gradient(circle at 90% 14%,rgba(238,229,223,.85),transparent 28%),
+    linear-gradient(155deg,#fbf8f6,#f6eeee 52%,#fbf9f7);
+  overflow-x:hidden
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.22;
+  background-image:linear-gradient(rgba(70,45,57,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(70,45,57,.03) 1px,transparent 1px);
+  background-size:31px 31px;
+  mask-image:linear-gradient(to bottom,black,transparent 68%)
+}
+.shell{width:min(100%,690px);margin:0 auto;padding:18px 14px calc(28px + env(safe-area-inset-bottom))}
+.hero{
+  position:relative;
+  overflow:hidden;
+  min-height:560px;
+  border-radius:38px;
+  color:#fff;
+  box-shadow:var(--shadow);
+  background:#2d2329;
+  isolation:isolate
+}
+.heroBg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;z-index:-3}
+.hero:before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(180deg,rgba(31,22,27,.15),rgba(31,22,27,.28) 35%,rgba(31,22,27,.86) 78%,rgba(31,22,27,.96))}
+.hero:after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(circle at 84% 10%,rgba(255,255,255,.16),transparent 25%),linear-gradient(140deg,rgba(165,110,122,.14),transparent 45%)}
+.heroTop{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:22px;font-size:10px;letter-spacing:.17em;text-transform:uppercase;color:rgba(255,255,255,.76)}
+.heroTop .mark{display:flex;align-items:center;gap:8px}.heroTop i{display:block;width:28px;height:2px;background:linear-gradient(90deg,#fff,#e4bac4);border-radius:99px}
+.pill{padding:8px 11px;border-radius:999px;border:1px solid rgba(255,255,255,.17);background:rgba(255,255,255,.08);backdrop-filter:blur(12px)}
+.heroCopy{position:absolute;left:22px;right:22px;bottom:22px}
+.kicker{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#edcbd3;font-weight:800;margin-bottom:8px}
+h1{margin:0 0 10px;font-size:clamp(33px,8vw,48px);line-height:.98;letter-spacing:-.045em}
+.heroSub{margin:0;max-width:560px;color:rgba(255,255,255,.77);font-size:14px;line-height:1.55}
+.heroMeta{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:17px}
+.meta{padding:13px 14px;border-radius:20px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.08);backdrop-filter:blur(12px)}
+.meta small{display:block;color:#edcbd3;font-size:9px;letter-spacing:.11em;text-transform:uppercase;margin-bottom:5px}.meta strong{font-size:12px;line-height:1.45;color:#fff}
+.intro{text-align:center;padding:26px 8px 12px}.intro h2{margin:0;font-size:24px;letter-spacing:-.03em}.intro p{margin:8px auto 0;max-width:540px;color:#776c72;font-size:13px;line-height:1.6}
+.links{display:grid;gap:12px}
+.link{display:grid;grid-template-columns:52px 1fr 26px;gap:14px;align-items:center;min-height:80px;padding:13px 15px;border-radius:24px;text-decoration:none;color:var(--ink);background:rgba(255,255,255,.91);border:1px solid rgba(86,59,72,.07);box-shadow:var(--soft);transition:transform .22s ease,box-shadow .22s ease}
+.link:active{transform:scale(.985)}
+@media(hover:hover){.link:hover{transform:translateY(-2px);box-shadow:0 18px 38px rgba(55,39,47,.14)}}
+.link.primary{color:#fff;border:0;background:radial-gradient(circle at 10% 12%,rgba(255,255,255,.18),transparent 24%),linear-gradient(110deg,#5b3e4b,#926070 58%,#c58e9b)}
+.icon{width:52px;height:52px;border-radius:17px;display:grid;place-items:center;background:#f7edf0;color:#956171}.icon svg{width:24px;height:24px}
+.primary .icon{background:rgba(255,255,255,.16);color:#fff}.linkedin .icon{background:linear-gradient(145deg,#0a66c2,#004182);color:#fff}.clinic .icon{background:linear-gradient(145deg,#385463,#1e3440);color:#fff}.map .icon{background:#eef6ff;color:#2877ce}.dgbt .icon{background:#f4eee9;color:#7e634d}
+.linkText strong{display:block;font-size:15px;line-height:1.22;margin-bottom:4px}.linkText span{display:block;font-size:12px;color:#796f74;line-height:1.3}.primary .linkText span{color:rgba(255,255,255,.74)}.arrow{font-size:23px}
+.label{display:flex;align-items:center;gap:11px;margin:27px 8px 12px;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#91838a;font-weight:800}.label:before,.label:after{content:"";height:1px;background:#e1d6da;flex:1}
+.dual{display:grid;grid-template-columns:1fr 1fr;gap:10px}.focus{padding:17px;border-radius:24px;background:rgba(255,255,255,.90);border:1px solid rgba(86,59,72,.08);box-shadow:var(--soft)}.focus small{display:block;color:#a56e7a;text-transform:uppercase;letter-spacing:.11em;font-size:9px;font-weight:800}.focus strong{display:block;margin-top:6px;font-size:17px;line-height:1.15}.focus span{display:block;margin-top:6px;color:#766c72;font-size:11px;line-height:1.5}
+.gallery{display:grid;grid-template-columns:1.1fr .9fr;grid-template-rows:140px 140px;gap:10px}.gallery img{width:100%;height:100%;object-fit:cover;display:block;border-radius:22px;box-shadow:var(--soft)}.gallery .big{grid-row:1/3}
+.card{border-radius:30px;background:rgba(255,255,255,.91);border:1px solid rgba(86,59,72,.08);box-shadow:var(--soft);padding:19px}
+.row{display:grid;grid-template-columns:38px 1fr;gap:11px;align-items:start;padding:10px 2px}.row+.row{border-top:1px solid #eee4e8}
+.mini{width:36px;height:36px;border-radius:12px;background:#f7edf0;color:#956171;display:grid;place-items:center}.mini svg{width:18px;height:18px}
+.row small{display:block;color:#9b8c93;font-size:9px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:3px}.row a,.row span{color:var(--ink);text-decoration:none;font-size:13px;line-height:1.5}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}.action{min-height:48px;border-radius:16px;text-decoration:none;display:flex;align-items:center;justify-content:center;border:1px solid #e4d9dd;color:var(--ink);font-weight:720;font-size:13px;background:#fff}.action.dark{background:#2b2227;color:#fff;border-color:#2b2227}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:9px}.chip{padding:10px 13px;border-radius:999px;background:rgba(255,255,255,.84);border:1px solid #e4d9dd;color:#6e6067;font-size:11px;font-weight:670;box-shadow:0 7px 18px rgba(55,39,47,.06)}
+footer{text-align:center;color:#968991;padding:25px 8px 4px;font-size:10px;line-height:1.6}footer b{color:#6d5e66}
+@media(max-width:410px){.shell{padding-left:10px;padding-right:10px}.hero{min-height:590px}.heroTop{padding:18px}.heroCopy{left:18px;right:18px;bottom:18px}.heroMeta{grid-template-columns:1fr}.dual{grid-template-columns:1fr 1fr}.gallery{grid-template-rows:125px 125px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<main class="shell">
+<section class="hero">
+<img class="heroBg" src="https://static.wixstatic.com/media/d4c0a9_cd926768412b45aba79e10c904e9597e~mv2.jpg/v1/fill/w_440,h_660,al_c,q_90,enc_auto/d4c0a9_cd926768412b45aba79e10c904e9597e~mv2.jpg" alt="Ästhetische Medizin">
+<div class="heroTop"><div class="mark"><i></i><span>Frankfurt und Karben</span></div><span class="pill">Dr. med. Katharina Kelling</span></div>
+<div class="heroCopy">
+<div class="kicker">Frauenheilkunde und Ästhetische Medizin</div>
+<h1>Dr. med.<br>Katharina Kelling</h1>
+<p class="heroSub">Frauenärztin mit klinischem Schwerpunkt in der gynäkologischen Onkologie und eigener Privatpraxis für ästhetische Medizin.</p>
+<div class="heroMeta">
+<div class="meta"><small>Privatpraxis</small><strong>Am Sand 18<br>61184 Karben</strong></div>
+<div class="meta"><small>Klinische Tätigkeit</small><strong>AGAPLESION MARKUS KRANKENHAUS<br>Frankfurt am Main</strong></div>
+</div>
+</div>
+</section>
+
+<section class="intro">
+<h2>Alle wichtigen Links an einem Ort</h2>
+<p>Ästhetische Medizin, gynäkologische Expertise, Kontakt und berufliches Profil direkt öffnen.</p>
+</section>
+
+<nav class="links" aria-label="Wichtige Links">
+<a class="link primary" href="https://www.drkelling.de/kontakt" target="_blank" rel="noopener">
+<span class="icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="5.5" width="17" height="13" rx="2.5" stroke="currentColor" stroke-width="1.8"/><path d="m5 7 7 5 7-5" stroke="currentColor" stroke-width="1.8"/></svg></span>
+<span class="linkText"><strong>Termin und Kontakt</strong><span>Direkte Anfrage an die Privatpraxis</span></span><span class="arrow">›</span>
+</a>
+
+<a class="link" href="https://www.drkelling.de/" target="_blank" rel="noopener">
+<span class="icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8"/><path d="M3.8 12h16.4M12 3.5c2.2 2.3 3.4 5.1 3.4 8.5S14.2 18.2 12 20.5c-2.2-2.3-3.4-5.1-3.4-8.5S9.8 5.8 12 3.5Z" stroke="currentColor" stroke-width="1.6"/></svg></span>
+<span class="linkText"><strong>Website</strong><span>Ästhetische Medizin und Behandlungen</span></span><span class="arrow">›</span>
+</a>
+
+<a class="link clinic" href="https://www.markus-krankenhaus.de/leistungsspektrum/fachabteilungen/klinik-fuer-gynaekologie-und-gynaekologische-onkologie" target="_blank" rel="noopener">
+<span class="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 4v16M4 12h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+<span class="linkText"><strong>Gynäkologie und Onkologie</strong><span>AGAPLESION MARKUS KRANKENHAUS</span></span><span class="arrow">›</span>
+</a>
+
+<a class="link linkedin" href="https://de.linkedin.com/in/katharina-kelling-343b95a9" target="_blank" rel="noopener">
+<span class="icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.5 8.2H3.4V20h3.1V8.2ZM5 3.3A1.8 1.8 0 1 0 5 7a1.8 1.8 0 0 0 0-3.7ZM20.6 13.2c0-3.6-1.9-5.3-4.5-5.3-2.1 0-3 1.1-3.5 1.9V8.2H9.5V20h3.1v-5.8c0-1.5.3-3 2.2-3 1.9 0 1.9 1.8 1.9 3.1V20h3.1v-6.8Z"/></svg></span>
+<span class="linkText"><strong>LinkedIn</strong><span>Berufliches Profil</span></span><span class="arrow">›</span>
+</a>
+
+<a class="link map" href="https://www.google.com/maps/search/?api=1&query=Dr.%20Katharina%20Kelling%20Am%20Sand%2018%2061184%20Karben" target="_blank" rel="noopener">
+<span class="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s6.5-5.2 6.5-11.5a6.5 6.5 0 1 0-13 0C5.5 15.8 12 21 12 21Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9.5" r="2.3" stroke="currentColor" stroke-width="1.8"/></svg></span>
+<span class="linkText"><strong>Google Maps</strong><span>Privatpraxis in Karben</span></span><span class="arrow">›</span>
+</a>
+
+<a class="link dgbt" href="https://www.dgbt.de/aerztesuche/land/deutschland/stadt/karben/fachgebiet/gynaekologie" target="_blank" rel="noopener">
+<span class="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3.5 18 6v5.4c0 4.1-2.3 7.3-6 9.1-3.7-1.8-6-5-6-9.1V6l6-2.5Z" stroke="currentColor" stroke-width="1.8"/><path d="m9.2 12 1.8 1.8 3.8-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+<span class="linkText"><strong>DGBT Ärzteliste</strong><span>Profil im Fachgebiet Gynäkologie</span></span><span class="arrow">›</span>
+</a>
+</nav>
+
+<div class="label">Schwerpunkte</div>
+<section class="dual">
+<div class="focus"><small>Frauenheilkunde</small><strong>Gynäkologische Onkologie</strong><span>Leitende klinische Tätigkeit und Leitung im Tumorzentrum.</span></div>
+<div class="focus"><small>Privatpraxis</small><strong>Ästhetische Medizin</strong><span>Individuelle Behandlungen mit medizinischem Anspruch.</span></div>
+</section>
+
+<div class="label">Ästhetische Medizin</div>
+<section class="gallery">
+<img class="big" src="https://static.wixstatic.com/media/75c8c6e859bc4743861552ceff3621ef.jpg/v1/crop/x_0,y_232,w_3840,h_3840/fill/w_600,h_800,al_c,q_88,enc_auto/nat%C3%BCrliche%20Make-up.jpg" alt="Natürliche Ästhetik">
+<img src="https://static.wixstatic.com/media/2965a16aeb9044b4be1080a7916a2c16.jpg/v1/crop/x_3353,y_265,w_1649,h_1646/fill/w_420,h_420,al_c,q_88,enc_auto/Nat%C3%BCrliche%20Sch%C3%B6nheit.jpg" alt="Natürliche Schönheit">
+<img src="https://static.wixstatic.com/media/d4c0a9_7e891277800349079d07495a622d934e~mv2.jpg/v1/crop/x_511,y_0,w_1478,h_2000/fill/w_420,h_420,al_c,q_88,enc_auto/Facial_edited.jpg" alt="Ästhetische Behandlung">
+</section>
+
+<div class="label">Kontakt Privatpraxis</div>
+<section class="card">
+<div class="row"><span class="mini"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s6.5-5.2 6.5-11.5a6.5 6.5 0 1 0-13 0C5.5 15.8 12 21 12 21Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9.5" r="2.2" stroke="currentColor" stroke-width="1.8"/></svg></span><div><small>Adresse</small><a href="https://www.google.com/maps/search/?api=1&query=Dr.%20Katharina%20Kelling%20Am%20Sand%2018%2061184%20Karben" target="_blank" rel="noopener">Am Sand 18<br>61184 Karben</a></div></div>
+<div class="row"><span class="mini"><svg viewBox="0 0 24 24" fill="none"><path d="M7.2 3.8 10 7.2 8.2 9.6c1.4 2.8 3.4 4.8 6.2 6.2l2.4-1.8 3.4 2.8c.5.4.6 1.2.2 1.7-.8 1-2 1.7-3.4 1.7-6.4 0-13.2-6.8-13.2-13.2 0-1.4.7-2.6 1.7-3.4.5-.4 1.3-.3 1.7.2Z" stroke="currentColor" stroke-width="1.7"/></svg></span><div><small>Telefon</small><a href="tel:+4917683652118">0176 83652118</a></div></div>
+<div class="row"><span class="mini"><svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="5.5" width="17" height="13" rx="2.5" stroke="currentColor" stroke-width="1.8"/><path d="m5 7 7 5 7-5" stroke="currentColor" stroke-width="1.8"/></svg></span><div><small>E Mail</small><a href="mailto:dr.katharina.kelling@gmail.com">dr.katharina.kelling@gmail.com</a></div></div>
+<div class="actions"><a class="action" href="tel:+4917683652118">Anrufen</a><a class="action dark" href="mailto:dr.katharina.kelling@gmail.com">E Mail</a></div>
+</section>
+
+<div class="label">Leistungen Ästhetik</div>
+<section class="chips">
+<span class="chip">Botox</span>
+<span class="chip">Hyaluron</span>
+<span class="chip">Profhilo</span>
+<span class="chip">Sculptra</span>
+<span class="chip">Microneedling</span>
+<span class="chip">Radiofrequenz Needling</span>
+<span class="chip">Vampire Lifting</span>
+<span class="chip">Longevity</span>
+</section>
+
+<footer><b>Dr. med. Katharina Kelling</b><br>Frauenärztin und Ärztin für ästhetische Medizin</footer>
+</main>
+</body>
+</html>
